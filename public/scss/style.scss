@@ -1,0 +1,24 @@
+@import './mobile/style.scss';
+@import './desktop/style.scss';
+@import './tablet/style.scss';
+
+@font-face {
+	font-family: 'Montserrat-Regular';
+	src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Montserrat-Bold';
+	src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+	font-family: 'Montserrat-Medium';
+	src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
