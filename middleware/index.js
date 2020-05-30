@@ -3,7 +3,6 @@ let App = express.Router();
 
 let newAccount = require('./newAccount/newAccount');
 
-
 App.post('/newAcount', newAccount )
 App.post('/login', (req, res) => {
     res.json({
