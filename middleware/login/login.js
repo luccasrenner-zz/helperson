@@ -1,7 +1,6 @@
 var needle = require("needle");
 
 const login = (request, response) => {
-  console.log(request.body);
 
   var data = {
     email: request.body.email,
@@ -14,8 +13,14 @@ const login = (request, response) => {
     { multipart: true },
     function (err, resp, body) {
       let { session_id, expiration } = body;
-
+            
+      response.cookie(
+        'session_id', 
+        session_id, 
+        { expires: new Date(Date.now() + 900000), httpOnly: true }
+      );
       response.json(body);
+
     }
   );
 };

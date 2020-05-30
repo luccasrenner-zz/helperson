@@ -5,6 +5,6 @@ let newAccount = require("./newAccount/newAccount");
 let login = require("./login/login");
 
 App.post("/newAcount", newAccount);
-App.post("/login", login);
+App.post("/auth", login);
 
 module.exports = App;

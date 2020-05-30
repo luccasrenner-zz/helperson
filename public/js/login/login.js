@@ -27,12 +27,19 @@ const login = (() => {
         password: password,
       },
     }).then(function (response) {
-      //response es el return del pedido
-      const { data } = response;
-      const { session_id } = data;
-      if (session_id === "2c5698408ddb5846f0c3098826eaf51e") {
-        window.location.assign("/");
+        
+        const { 
+            data
+        } = response;
+
+        const { 
+            session_id
+        } = data;
+
+      if (session_id) {
+        window.location.assign("/main");
       }
+
     });
   }
 })();
