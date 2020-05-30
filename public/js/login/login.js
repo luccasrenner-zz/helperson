@@ -8,10 +8,8 @@ const login = (() => {
 
   if (submitForm !== null) {
     submitForm.addEventListener("submit", function (e) {
-      alert("ingresado");
       e.preventDefault();
       submitData();
-
       return false;
     });
   }
