@@ -6,11 +6,15 @@ const login = (() => {
 
   const submitForm = document.querySelector("#login-submit");
 
-  submitForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-    submitData();
-    return false;
-  });
+  if (submitForm !== null) {
+    submitForm.addEventListener("submit", function (e) {
+      alert("ingresado");
+      e.preventDefault();
+      submitData();
+
+      return false;
+    });
+  }
 
   function submitData() {
     const email = document.querySelector("#login-email").value;
