@@ -1,19 +1,17 @@
 const newAccount = (() => {
 
     const axios = require('../vendor/axios/axios').default;
-
     const userAPI = require('../constants/userAPI');
-    
 
     const submitForm = document.querySelector('#newaccount-submit');
 
-    
-    submitForm.addEventListener('submit', function( e ) {
-        e.preventDefault();
-        submitData();
-        return false;
-    });
-
+    if(submitForm != null) {
+        submitForm.addEventListener('submit', function( e ) {
+            e.preventDefault();
+            submitData();
+            return false;
+        }); 
+    }
 
     function submitData() {
 
