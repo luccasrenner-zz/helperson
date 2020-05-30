@@ -5,12 +5,9 @@ const newAccount = (() => {
     const userAPI = require('../constants/userAPI');
     
 
-
     const submitForm = document.querySelector('#newaccount-submit');
 
     
-
-
     submitForm.addEventListener('submit', function( e ) {
         e.preventDefault();
         submitData();
@@ -46,8 +43,6 @@ const newAccount = (() => {
 
         });
     }
-
-
 
 
 })();
