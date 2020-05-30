@@ -1,83 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<link rel="stylesheet" type="text/css" href="./scss/style.css" />
-		<title>Helpersons</title>
-	</head>
-	<body>
-		<header class="header">
-			<img src="./img/logo.svg" alt="Helpersons logo" />
-			<h1 class="title"><strong>Help</strong>ersons</h1>
-			<h4 class="subtitle">
-				Encuentra solución a tus problemas o forma parte de la
-				comunidad de ayuda como <span>Helper</span>
-			</h4>
-			<div
-				class="g-signin2"
-				data-onsuccess="onSignIn"
-				data-theme="dark"
-			></div>
-			<div class="buttons">
-				<button class="button" type="button">Soy Helped</button>
-				<button class="button" type="button">Soy Helper</button>
-			</div>
-		</header>
-		<section class="description">
-			<h3 class="titleDescription">
-				¿Qué es <span>Help</span>ersons?
-			</h3>
-			<p>
-				Helpersons es una plataforma que
-				<strong>conecta a las personas</strong> para ayudarse
-				mutuamente a resolver inquietudes y problemáticas.
-			</p>
-		</section>
-		<section class="information">
-			<div class="content-img">
-				<img
-					src="./img/comunicacion-eficaz.svg"
-					alt="Comunicación eficaz"
-				/>
-				<p class="info-title">Comunicación eficaz</p>
-				<p class="text">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Rerum exercitationem reprehenderit, fuga unde, accusantium
-					ipsa blanditiis cumque temporibus perspiciatis praesentium
-					laborum reiciendis impedit in mollitia dolorum aut ratione
-					placeat porro.
-				</p>
-			</div>
-			<div class="content-img">
-				<img src="./img/grupos-ayuda.svg" alt="Grupos de ayuda" />
-				<p class="info-title">Grupos de ayuda</p>
-				<p class="text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					Velit doloribus fugiat explicabo ullam perferendis
-					perspiciatis tempora itaque pariatur! Odio odit placeat modi
-					aspernatur omnis at dolorem ut assumenda iure minima?
-				</p>
-			</div>
-			<div class="content-img">
-				<img
-					src="./img/comunicacion-24-7.svg"
-					alt="Comunicación 24/7"
-				/>
-				<p class="info-title">Comunicación 24/7</p>
-				<p class="text">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Nobis voluptas in minus veniam, voluptatum dolor soluta
-					animi qui, natus officiis debitis itaque harum reprehenderit
-					ipsam esse, laboriosam ab consequatur expedita!
-				</p>
-			</div>
-		</section>
-		<footer class="footer">
-			<p>© <span>Helpersons</span> 2020</p>
-		</footer>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e0d9b10ad3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+    <header>
+            <nav>
+                <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars" id="bars"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+                <a class="logo" href=""><img src="images/logo-icon.svg" alt=""></a>
+                <ul class="menu">
+                    <li class="menu-option"><a href="">HOME</a></li>
+                    <li class="menu-option"><a href="">SOBRE NOSOTROS</a></li>
+                    <li class="menu-option"><a href="">RESEÑAS</a></li>
+                    <li class="menu-option"><a class="btn-imp" href="signin.html"><i class="fas fa-sign-in-alt"></i>INGRESAR</a></li>
+                    
+                </ul>
+            </nav>
+    </header>
+    <section class="cont-index">
+        <div class="cont-encabezado">
+            <h1 class="title">Hel<span style="color: #ffffff;">persons</span> </h1>
+            <div class="cont-parrafoo">
+                <p class="parrafoenc">Encuentra solución a tus problemas o forma parte de la comunidad de ayuda como Helper</p>
+            </div>
+            <div class="btn-encabezado">
+                <a class="btn-person" href="">Quiero Ayuda</a>
+                <a class="btn-helper" href="">Quiero Ayudar</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="seccion-info">
+        <h1 class="tit-info-hp">¿Qué es <span style="color: #3DE200;">Hel</span>persons?</h1>
+        <p class="info-parrafo">Helpersons es una plataforma que conecta a las personas para ayudarse mutuamente a resolver inquietudes y problemáticas.</p>
+        <div class="icon-container-info">
+            <div class="cont-card-info">
+                <img src="images/icon-grupo.svg" alt="">
+                <h3>Sesion individual</h3>
+                <p>Habla directamente con un profesional que pueda ayudarte.</p>
+            </div>
+            <div class="cont-card-info">
+                <img src="images/icono-mplat.svg" alt="">
+                <h3>Multi canal</h3>
+                <p>Podes elegir entre Chat, llamada o Videollamada, vos elegis!</p>
+            </div>
+            <div class="cont-card-info">
+                <img src="images/icono-24.svg" alt="">
+                <h3>24/7</h3>
+                <p>Podes ingresar desde donde quieras las 24hs.</p>
+            </div>
+            
+        </div>
+        <div class="cta-cont">
+            <a class="calltoact" href="">Sumate a la ayuda</a>
+        </div>
+
+        
+        
+    </section>
+
+    <section class="resenas-help">
+
+        <div class="cont-resen">
+            <h1 class="tit-resenas">
+                Experiencias de nuestros usuarios!
+            </h1>
+    
+            <div class="img-resenas-cont">
+                <img class="resena-img" src="images/reseña-formato.svg" alt="">
+            <img class="resena-img" src="images/reseña-formato.svg" alt="">
+            <img class="resena-img" src="images/reseña-formato.svg" alt="">
+            <img class="resena-img" src="images/reseña-formato.svg" alt="">
+            <img class="resena-img" src="images/reseña-formato.svg" alt="">
+            <img class="resena-img" src="images/reseña-formato.svg" alt="">
+            
+            </div>
+        </div>
+        
+
+        
+    </section>
+    <section class="footer">
+        <div class="footer-hijo">
+            <a href="">Información y ayuda</a>
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+               
+            </div>
+        </div>
+    </section>
+
+    <script src="dist/bundle.js"></script>
+</body>
 </html>

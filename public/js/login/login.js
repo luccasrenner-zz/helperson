@@ -2,7 +2,9 @@ const login = (() => {
   const axios = require("../vendor/axios/axios").default;
   const userAPI = require("../constants/userAPI");
 
-  const { login } = userAPI;
+  const {
+       login
+     } = userAPI;
 
   const submitForm = document.querySelector("#login-submit");
 

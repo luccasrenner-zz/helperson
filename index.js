@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(Router);
 
-app.get('/main', function(req, res) {
+app.get('/', function(req, res) {
     res.sendFile('static/view/index/index.html', { root: __dirname });
 })
 
