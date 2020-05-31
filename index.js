@@ -24,4 +24,10 @@ app.get("/newaccount", function (req, res) {
   res.sendFile("static/view/newAccount/index.html", { root: __dirname });
 });
 
+app.get("/main-person", function (req, res) {
+  res.sendFile("static/view/dashboard/person/db-person.html", {
+    root: __dirname,
+  });
+});
+
 app.listen(3333);
