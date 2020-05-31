@@ -1,10 +1,12 @@
-const globalScripts = (function(){
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
 
-    window.addEventListener("scroll", function(){
-        var header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 0);
-    });
+document.getElementById("btnPersonId").addEventListener("click", function () {
+  document.querySelector(".bg-modal").style.display = "flex";
+});
 
-    $('.carousel').carousel();
-    
-})();
+document.querySelector(".close").addEventListener("click", function () {
+  document.querySelector(".bg-modal").style.display = "none";
+});
