@@ -7,18 +7,17 @@ const newUserQuery = (request, res) => {
 
 
     var data = {
-        text : request.body.text,
+      text : request.body.text,
         session_id : sessionID
       }
+      console.log(data)
       
-      console.log(request.body)
       needle.post(
           'http://grupormaker.com/dev/helperson-api/public/new_person_query', 
           data, 
           { multipart: true }, 
           function(err, resp, body) {
-                
-
+            
             res.json(body)
          }
       );

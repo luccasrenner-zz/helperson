@@ -29,5 +29,11 @@ app.get("/main-person", function (req, res) {
   });
 });
 
+app.get("/main-helper", function (req, res) {
+  res.sendFile("static/view/dashboard/helper/db-helper.html", {
+    root: __dirname,
+  });
+});
+
 
 app.listen(3333);
