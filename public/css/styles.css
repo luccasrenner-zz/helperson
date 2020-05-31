@@ -70,7 +70,7 @@ nav {
 .sticky .menu {
   display: inline-block;
   list-style: none;
-  float: right;
+
   margin-right: 100px;
   padding: 5px 0;
 }
@@ -390,7 +390,7 @@ nav {
   margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (350px); [3];
+
   grid-template-columns: repeat(3, 350px);
   grid-gap: 40px;
   -webkit-box-pack: center;
@@ -580,7 +580,7 @@ nav {
     margin: auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (350px) [2];
+
     grid-template-columns: repeat(2, 350px);
     grid-gap: 40px;
     -webkit-box-pack: center;
@@ -908,7 +908,7 @@ label #cancel {
     margin: auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (250px) [2];
+
     grid-template-columns: repeat(2, 250px);
     grid-gap: 40px;
     -webkit-box-pack: center;
@@ -950,7 +950,6 @@ label #cancel {
     margin: auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (300px) [1];
     grid-template-columns: repeat(1, 300px);
     grid-gap: 40px;
     -webkit-box-pack: center;

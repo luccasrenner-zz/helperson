@@ -1,27 +1,27 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const bodyParser = require('body-parser');
-const cors = require('cors');
+const bodyParser = require("body-parser");
+const cors = require("cors");
 
-const Router = require('./middleware/index');
+const Router = require("./middleware/index");
 
-app.use(express.static('public'));
+app.use(express.static("public"));
 
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(Router);
 
-app.get('/', function(req, res) {
-    res.sendFile('static/view/index/index.html', { root: __dirname });
-})
+app.get("/", function (req, res) {
+  res.sendFile("static/view/index/index.html", { root: __dirname });
+});
 
-app.get('/login', function(req, res) {
-    res.sendFile('static/view/login/index.html', { root: __dirname });
-})
+app.get("/login", function (req, res) {
+  res.sendFile("static/view/login/index.html", { root: __dirname });
+});
 
-app.get('/newaccount', function(req, res) {
-    res.sendFile('static/view/newAccount/index.html', { root: __dirname });
-})
+app.get("/newaccount", function (req, res) {
+  res.sendFile("static/view/newAccount/index.html", { root: __dirname });
+});
 
 app.listen(3333);
