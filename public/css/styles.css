@@ -1,10 +1,13 @@
 @charset "UTF-8";
+/*---------VARIABLES--------*/
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 
 /*------MENU TRANSPARENTE------*/
@@ -81,9 +84,8 @@ nav {
 
 .sticky .menu-option a {
   text-decoration: none;
-  color: #22263D;
+  color: #22263d;
   font-size: 14px;
-  font-weight: normal;
 }
 
 .sticky .menu-option a i {
@@ -97,7 +99,7 @@ nav {
 }
 
 .sticky .btn-imp {
-  border: 1px solid #22263D;
+  border: 1px solid #22263d;
   border-radius: 4px;
   padding: 5px 5px;
 }
@@ -110,7 +112,7 @@ nav {
   display: flex;
   width: 100%;
   height: 100vh;
-  background: #22263D;
+  background: #22263d;
 }
 
 .cont-encabezado {
@@ -121,17 +123,17 @@ nav {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0 200px;
 }
 
 .title {
   text-align: center;
-  color: #3DE200;
+  color: #3de200;
   font-size: 100px;
 }
 
@@ -151,20 +153,21 @@ nav {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.btn-encabezado .btn-person, .btn-encabezado .btn-helper {
+.btn-encabezado .btn-person,
+.btn-encabezado .btn-helper {
   margin: 20px 20px 0 20px;
   text-decoration: none;
   padding: 15px 50px;
   font-size: 25px;
   border-radius: 5px;
-  color: #22263D;
+  color: #22263d;
 }
 
 .btn-encabezado .btn-person {
@@ -172,7 +175,103 @@ nav {
 }
 
 .btn-encabezado .btn-helper {
-  background-color: #3DE200;
+  background-color: #3de200;
+}
+
+/*modal*/
+.bg-modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.modal-contents {
+  padding: 30px 0;
+  background: #fff;
+  position: relative;
+  top: 30px;
+  width: 600px;
+  max-width: 600px;
+  height: 68%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-modal-person {
+  width: 100%;
+  height: 100%;
+}
+
+.modalimp {
+  margin: 14px 0;
+  font-size: 20px;
+  width: 90%;
+  height: 60px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  padding: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 42px;
+  color: #333;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #666;
+}
+
+.buttonmodal {
+  text-decoration: none;
+  position: relative;
+  top: 30px;
+  background-color: #22263d;
+  padding: 10px 50px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.buttonmodal:hover {
+  background-color: #fff;
+  border: 1px solid #22263d;
+  color: #22263d;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.plogin-modal {
+  position: relative;
+  top: 55px;
+  color: #22263d;
 }
 
 /*-----CONTENEDOR DE INFORMACIÓN-----*/
@@ -186,7 +285,7 @@ nav {
 .tit-info-hp {
   margin: 100px 0 50px 0;
   text-align: center;
-  color: #22263D;
+  color: #22263d;
   font-size: 55px;
 }
 
@@ -194,7 +293,7 @@ nav {
   text-align: center;
   margin: 0 100px;
   font-size: 25px;
-  color: #22263D;
+  color: #22263d;
 }
 
 .icon-container-info {
@@ -211,8 +310,8 @@ nav {
 
 .cont-card-info {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   padding: 0 20px;
   position: relative;
   width: 400px;
@@ -248,15 +347,15 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .calltoact {
   text-align: center;
   text-decoration: none;
-  background: #3DE200;
-  color: #ffffff;
+  background: #3de200;
+  color: #22263d;
   padding: 20px 60px;
   font-size: 25px;
   border-radius: 5px;
@@ -268,13 +367,13 @@ nav {
   top: 50px;
   width: 100%;
   height: 100%;
-  background-color: #22263D;
+  background-color: #22263d;
 }
 
 .cont-resen {
   position: relative;
   top: 100px;
-  background-color: #22263D;
+  background-color: #22263d;
   padding-bottom: 80px;
 }
 
@@ -291,12 +390,12 @@ nav {
   margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (350px)[3];
-      grid-template-columns: repeat(3, 350px);
+  -ms-grid-columns: (350px); [3];
+  grid-template-columns: repeat(3, 350px);
   grid-gap: 40px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .resena-img {
@@ -318,7 +417,7 @@ nav {
   float: left;
   margin-left: 100px;
   text-decoration: none;
-  color: #22263D;
+  color: #22263d;
 }
 
 .footer-hijo .social {
@@ -326,13 +425,13 @@ nav {
   font-size: 20px;
   float: right;
   margin-right: 100px;
-  color: #22263D;
+  color: #22263d;
 }
 
 /*TODO:--------SOLO PARA INGRESO DE SESION------*/
 /*TODO:--------SOLO PARA INGRESO DE SESION------*/
 .bdlogin {
-  background-color: #22263D;
+  background-color: #22263d;
 }
 
 .hdlogin {
@@ -343,23 +442,23 @@ nav {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .logocuenta {
   width: 100px;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .contenedor-form {
@@ -373,11 +472,11 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .form {
@@ -389,12 +488,13 @@ nav {
 .form h3 {
   font-weight: bold;
   text-align: center;
-  color: #22263D;
+  color: #22263d;
   font-size: 30px;
   margin-bottom: 10px;
 }
 
-.name, .email {
+.name,
+.email {
   margin: 10px 0;
   font-size: 20px;
   width: 90%;
@@ -422,7 +522,7 @@ nav {
 .sub-btn {
   margin-top: 10px;
   margin-bottom: 10px;
-  background-color: #22263D;
+  background-color: #22263d;
   padding: 10px 50px;
   font-size: 20px;
   color: #fff;
@@ -435,15 +535,44 @@ nav {
 
 .sub-btn:hover {
   background-color: #fff;
-  border: 1px solid #22263D;
-  color: #22263D;
+  border: 1px solid #22263d;
+  color: #22263d;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+.link-login {
+  text-decoration: none;
+  color: blue;
 }
 
 /*TODO:--------SOLO PARA INGRESO DE SESION------*/
 /*TODO:--------SOLO PARA INGRESO DE SESION------*/
 /*RESPONSIVE*/
+/*---------VARIABLES--------*/
+@media (max-width: 1440px) {
+  .icon-container-info {
+    margin: auto;
+    width: 80%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: minmax(300px, 1fr) [auto-fill];
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    align-self: flex-start;
+  }
+  .cont-card-info {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    padding: 0 20px;
+    position: relative;
+    height: 100%;
+    margin-top: 20px;
+  }
+}
+
 @media (max-width: 1200px) {
   .img-resenas-cont {
     position: relative;
@@ -451,19 +580,64 @@ nav {
     margin: auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (350px)[2];
-        grid-template-columns: repeat(2, 350px);
+    -ms-grid-columns: (350px) [2];
+    grid-template-columns: repeat(2, 350px);
     grid-gap: 40px;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .cont-encabezado {
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 100px;
+  }
+  .cont-parrafoo {
+    margin: 30px 50px;
+  }
+  .icon-container-info {
+    margin: auto;
+    width: 80%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: minmax(273px, 1fr) [auto-fill];
+    grid-template-columns: repeat(auto-fill, minmax(273px, 1fr));
+    align-self: flex-start;
+  }
+  .cont-card-info {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    padding: 0 20px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+  img {
+    display: -ms-grid;
+    display: grid;
+    width: 60px;
+    margin: auto;
   }
 }
 
 label #bars,
 label #cancel {
   font-size: 24px;
-  color: #3DE200;
+  color: #3de200;
   float: right;
   margin-right: 16px;
   cursor: pointer;
@@ -478,7 +652,7 @@ label #cancel {
 @media (max-width: 900px) {
   /*MENU RESPONSIVE NAVBAR HAMBURGER*/
   nav {
-    background-color: #22263D;
+    background-color: #22263d;
     padding: 22px 0 22px 0;
     position: fixed;
     width: 100%;
@@ -502,8 +676,8 @@ label #cancel {
     top: 68px;
     left: -110%;
     text-align: left;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .menu li {
     display: block;
@@ -511,19 +685,19 @@ label #cancel {
   }
   .menu a {
     text-decoration: none;
-    color: #3DE200;
+    color: #22263d;
     font-size: 16px;
     letter-spacing: 0;
     line-height: 28px;
   }
   .btn-imp {
-    border: 1px solid #3DE200;
+    border: 1px solid #22263d;
     border-radius: 4px;
     padding: 5px 5px;
   }
   /*sticky*/
   .sticky nav {
-    background-color: #22263D;
+    background-color: #22263d;
     padding: 22px 0 22px 0;
     position: fixed;
     width: 100%;
@@ -547,8 +721,8 @@ label #cancel {
     top: 68px;
     left: -110%;
     text-align: left;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .sticky .menu li {
     display: block;
@@ -556,13 +730,13 @@ label #cancel {
   }
   .sticky .menu a {
     text-decoration: none;
-    color: #3DE200;
+    color: #22263d;
     font-size: 16px;
     letter-spacing: 0;
     line-height: 28px;
   }
   .btn-imp {
-    border: 1px solid #3DE200;
+    border: 1px solid #22263d;
     border-radius: 4px;
     padding: 5px 5px;
   }
@@ -583,7 +757,7 @@ label #cancel {
     display: flex;
     width: 100%;
     height: 100vh;
-    background: #22263D;
+    background: #22263d;
   }
   .cont-encabezado {
     width: 100%;
@@ -593,16 +767,16 @@ label #cancel {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin: 0 100px;
   }
   .title {
     text-align: center;
-    color: #3DE200;
+    color: #3de200;
     font-size: 50px;
   }
   .cont-parrafoo {
@@ -619,13 +793,14 @@ label #cancel {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
-  .btn-encabezado .btn-person, .btn-encabezado .btn-helper {
+  .btn-encabezado .btn-person,
+  .btn-encabezado .btn-helper {
     text-align: center;
     width: 100%;
     margin: 20px 0 0 0;
@@ -633,13 +808,13 @@ label #cancel {
     padding: 15px 50px;
     font-size: 25px;
     border-radius: 5px;
-    color: #22263D;
+    color: #22263d;
   }
   .btn-encabezado .btn-person {
     background-color: #ffffff;
   }
   .btn-encabezado .btn-helper {
-    background-color: #3DE200;
+    background-color: #3de200;
   }
   /*----FIN ENCABEZADO-----*/
   /*-----INFORMACION-----*/
@@ -652,14 +827,14 @@ label #cancel {
   .tit-info-hp {
     margin: 100px 0 50px 0;
     text-align: center;
-    color: #22263D;
+    color: #22263d;
     font-size: 45px;
   }
   .info-parrafo {
     text-align: center;
     margin: 0 100px;
     font-size: 25px;
-    color: #22263D;
+    color: #22263d;
   }
   .icon-container-info {
     margin: auto;
@@ -674,8 +849,8 @@ label #cancel {
   }
   .cont-card-info {
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
     padding: 0 20px;
     position: relative;
     width: 100%;
@@ -707,13 +882,13 @@ label #cancel {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .calltoact {
     text-align: center;
     text-decoration: none;
-    background: #3DE200;
+    background: #3de200;
     color: #ffffff;
     padding: 20px 60px;
     font-size: 25px;
@@ -733,12 +908,12 @@ label #cancel {
     margin: auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (250px)[2];
-        grid-template-columns: repeat(2, 250px);
+    -ms-grid-columns: (250px) [2];
+    grid-template-columns: repeat(2, 250px);
     grid-gap: 40px;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .resena-img {
     width: 250px;
@@ -757,14 +932,14 @@ label #cancel {
     float: left;
     margin-left: 40px;
     text-decoration: none;
-    color: #22263D;
+    color: #22263d;
   }
   .footer-hijo .social {
     text-decoration: none;
     font-size: 20px;
     float: right;
     margin-right: 40px;
-    color: #22263D;
+    color: #22263d;
   }
 }
 
@@ -775,12 +950,12 @@ label #cancel {
     margin: auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (300px)[1];
-        grid-template-columns: repeat(1, 300px);
+    -ms-grid-columns: (300px) [1];
+    grid-template-columns: repeat(1, 300px);
     grid-gap: 40px;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .resena-img {
     width: 300px;
@@ -796,17 +971,18 @@ label #cancel {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin: 0 10px;
   }
   .cont-parrafoo {
     margin: 30px 10px;
   }
-  .btn-person, .btn-helper {
+  .btn-person,
+  .btn-helper {
     text-align: center;
     width: 100%;
     margin: 20px 0 0 0;
@@ -814,20 +990,20 @@ label #cancel {
     padding: 15px 20px;
     font-size: 20px;
     border-radius: 5px;
-    color: #22263D;
+    color: #22263d;
   }
   /*infoooo*/
   .tit-info-hp {
     margin: 80px 10px 25px 10px;
     text-align: center;
-    color: #22263D;
+    color: #22263d;
     font-size: 30px;
   }
   .info-parrafo {
     text-align: center;
     margin: 0 10px;
     font-size: 18px;
-    color: #22263D;
+    color: #22263d;
   }
   .icon-container-info {
     margin: auto;
@@ -842,8 +1018,8 @@ label #cancel {
   }
   .cont-card-info {
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
     padding: 0 20px;
     position: relative;
     width: 100%;
@@ -859,13 +1035,13 @@ label #cancel {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .calltoact {
     text-align: center;
     text-decoration: none;
-    background: #3DE200;
+    background: #3de200;
     color: #ffffff;
     padding: 20px 40px;
     font-size: 20px;
@@ -878,8 +1054,8 @@ label #cancel {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     background-color: white;
     padding: 29px 0 22px 0;
     position: relative;
@@ -891,7 +1067,7 @@ label #cancel {
     float: none;
     margin: auto;
     text-decoration: none;
-    color: #22263D;
+    color: #22263d;
   }
   .footer-hijo .social {
     text-decoration: none;
@@ -900,7 +1076,7 @@ label #cancel {
     float: none;
     margin: auto;
     margin-top: 10px;
-    color: #22263D;
+    color: #22263d;
   }
   .footer-hijo .social i {
     margin: 0 15px;
@@ -909,8 +1085,29 @@ label #cancel {
 
 /*--------SIGN IN PAGE-------*/
 @media (max-width: 470px) {
+  /*MODAL*/
+  .modal-contents {
+    margin: 0 10px;
+    padding: 30px 0;
+    background: #fff;
+    position: relative;
+    top: 30px;
+    width: 600px;
+    max-width: 600px;
+    height: 78%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
   .hdlogin {
-    margin-top: 80px;
+    margin-top: 5px;
   }
   .contenedor-form {
     background: #fff;
@@ -925,7 +1122,8 @@ label #cancel {
     width: 100%;
     padding: 20px;
   }
-  .email, .password {
+  .email,
+  .password {
     width: 100%;
     margin: 10px 0;
   }
