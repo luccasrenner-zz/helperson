@@ -158,10 +158,16 @@ nav {
 
   .btn-person {
     background-color: $color-menu;
+    &:hover {
+      box-shadow: 0px 0px 10px rgba($color: #fff, $alpha: 0.5);
+    }
   }
 
   .btn-helper {
     background-color: $color-verde;
+    &:hover {
+      box-shadow: 0px 0px 10px rgba($color: $color-verde, $alpha: 0.5);
+    }
   }
 }
 
@@ -325,10 +331,12 @@ nav {
   text-decoration: none;
   background: $color-verde;
   color: $color-azul;
-
   padding: 20px 60px;
   font-size: 25px;
   border-radius: 5px;
+  &:hover {
+    box-shadow: 0px 0px 20px rgba($color: $color-verde, $alpha: 0.8);
+  }
 }
 
 /*--------RESEÑAS----------*/
