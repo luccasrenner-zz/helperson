@@ -39,8 +39,6 @@ const login = (() => {
             account_type
         } = data;
 
-        console.log(response);
-
 
       if ( account_type == "helper" ) { 
         window.location.assign("/main-helper")

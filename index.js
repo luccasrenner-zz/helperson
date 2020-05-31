@@ -6,7 +6,6 @@ const cors = require("cors");
 const Router = require("./middleware/index");
 
 app.use(express.static("public"));
-
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
