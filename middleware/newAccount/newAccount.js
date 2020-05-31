@@ -7,7 +7,8 @@ const newAccount = (request, response) => {
     var data = {
         name : request.body.name,
         email : request.body.email,
-        password: request.body.password
+        password: request.body.password,
+        'acount-type': request.body['acount-type']
       }
       
       needle.post(
