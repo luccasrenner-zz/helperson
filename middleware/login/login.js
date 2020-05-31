@@ -19,6 +19,7 @@ const login = (request, response) => {
         session_id, 
         { expires: new Date(Date.now() + 900000), httpOnly: true }
       );
+
       response.json(body);
 
     }

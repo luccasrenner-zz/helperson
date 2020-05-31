@@ -35,11 +35,19 @@ const login = (() => {
         } = response;
 
         const { 
-            session_id
+            session_id,
+            account_type
         } = data;
 
-      if (session_id) {
-        window.location.assign("/main");
+        console.log(response);
+
+
+      if ( account_type == "helper" ) { 
+        window.location.assign("/main-helper")
+      }else if( account_type == "person" ) {
+        window.location.assign("/main-person");
+      } else {
+          return;
       }
 
     });
