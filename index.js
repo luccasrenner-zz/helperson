@@ -24,4 +24,5 @@ app.get('/newaccount', function(req, res) {
     res.sendFile('static/view/newAccount/index.html', { root: __dirname });
 })
 
+
 app.listen(3333);
